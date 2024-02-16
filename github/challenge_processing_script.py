@@ -64,6 +64,7 @@ if __name__ == "__main__":
 
     data = {"GITHUB_REPOSITORY": GITHUB_REPOSITORY}
 
+    """
     try:
         response = requests.post(url, data=data, headers=headers, files=file)
 
@@ -104,6 +105,7 @@ if __name__ == "__main__":
             )
             print(error_message)
             os.environ["CHALLENGE_ERRORS"] = error_message
+    """
 
     zip_file.close()
     os.remove(zip_file.name)
