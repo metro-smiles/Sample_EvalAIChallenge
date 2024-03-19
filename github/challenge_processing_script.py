@@ -81,27 +81,27 @@ if __name__ == "__main__":
             is_token_valid = validate_token(response.json())
             if is_token_valid:
                 error = response.json()["error"]
-                error_message = "\nFollowing errors occurred while validating the challenge config:\n{}".format(
+                error_message = "\nKnown EvalAI errors occurred while validating the challenge config:\n{}".format(
                     error
                 )
                 print(error_message)
                 os.environ["CHALLENGE_ERRORS"] = error_message
         else:
             print(
-                "\nFollowing errors occurred while validating the challenge config: {}".format(
+                "\nUnknown EvalAI errors occurred while validating the challenge config: {}".format(
                     err
                 )
             )
             os.environ["CHALLENGE_ERRORS"] = str(err)
     except Exception as e:
         if VALIDATION_STEP == "True":
-            error_message = "\nFollowing errors occurred while validating the challenge config: {}".format(
+            error_message = "\nUnforseen errors occurred while validating the challenge config: {}".format(
                 e
             )
             print(error_message)
             os.environ["CHALLENGE_ERRORS"] = error_message
         else:
-            error_message = "\nFollowing errors occurred while processing the challenge config: {}".format(
+            error_message = "\nUnforseen errors occurred while processing the challenge config: {}".format(
                 e
             )
             print(error_message)
