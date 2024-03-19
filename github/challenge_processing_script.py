@@ -84,7 +84,7 @@ if __name__ == "__main__":
                 error_message = "\nKnown EvalAI errors occurred while validating the challenge config:\n{}".format(
                     error
                 )
-                print(error_message)
+                print('Error code is: {}, error message is: {}'.format(response.status_code, error_message))
                 os.environ["CHALLENGE_ERRORS"] = error_message
         else:
             print(
