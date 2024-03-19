@@ -51,6 +51,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
                     "Metric2": random.randint(0, 99),
                     "Metric3": random.randint(0, 99),
                     "Total": random.randint(0, 99),
+                    "score": random.randint(0, 99),
                 }
             }
         ]
@@ -66,6 +67,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
                     "Metric2": random.randint(0, 99),
                     "Metric3": random.randint(0, 99),
                     "Total": random.randint(0, 99),
+                    "score": random.randint(0, 99),
                 }
             },
             {
@@ -74,6 +76,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
                     "Metric2": random.randint(0, 99),
                     "Metric3": random.randint(0, 99),
                     "Total": random.randint(0, 99),
+                    "score": random.randint(0, 99),
                 }
             },
         ]
