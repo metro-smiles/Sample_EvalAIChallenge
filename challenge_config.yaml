@@ -32,7 +32,7 @@ leaderboard:
           "Metric2": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          }
+          },
           "score": {
             "sort_ascending": True,
             "description": "The ultimate criterion.",
